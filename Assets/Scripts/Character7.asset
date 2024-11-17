@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561701da50d03b9459f32de34996a7a7, type: 3}
+  m_Name: Character7
+  m_EditorClassIdentifier: 
+  characterName: 
+  cardImage: {fileID: 622385511510613547, guid: d821d6af277d2754ab0d516d1b6077ce, type: 3}
+  introductionImage: {fileID: -3547240507765451921, guid: cefe485ebafb14045a4dd0a9e85d5289, type: 3}
