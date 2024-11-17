@@ -3,7 +3,10 @@ guid: 145b472c0a2401b4aba0a9b0951531b2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - startDrawButton: {instanceID: 0}
+  - animationPanel: {instanceID: 0}
+  - videoPlayer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
