@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Character2
   m_EditorClassIdentifier: 
   characterName: 
-  cardImage: {fileID: 7780264574027006942, guid: ce8e4d04dc8def84aba54ec83692de49, type: 3}
+  cardImage: {fileID: 7780264574027006942, guid: 4f73e9466ec5d324192de3bc25a61da0, type: 3}
   introductionImage: {fileID: 2596552556267567030, guid: d1bbcf93b2e524f488e53f9a0fb2ad69, type: 3}
