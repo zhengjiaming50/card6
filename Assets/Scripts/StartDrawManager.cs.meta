@@ -5,8 +5,13 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - startDrawButton: {instanceID: 0}
-  - animationPanel: {instanceID: 0}
+  - videoPanel: {instanceID: 0}
   - videoPlayer: {instanceID: 0}
+  - characterDisplayPanel: {instanceID: 0}
+  - selectedCharacterImage: {instanceID: 0}
+  - introductionManager: {instanceID: 0}
+  - characterAnimator: {instanceID: 0}
+  - cardGlowMaterial: {fileID: 2100000, guid: e220eb11ff8e63b46b642a10af0eeb9b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
