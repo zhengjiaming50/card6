@@ -12,6 +12,7 @@ public class StartDrawManager : MonoBehaviour
     [SerializeField] private Image selectedCharacterImage;
     [SerializeField] private IntroductionManager introductionManager;
     [SerializeField] private List<Character> characters;
+    [SerializeField] private Animator characterAnimator;
 
     private Character drawnCharacter;
 
@@ -95,6 +96,15 @@ public class StartDrawManager : MonoBehaviour
             else
             {
                 Debug.LogError("SelectedCharacterImage does not have a Button component.");
+            }
+
+            if (characterAnimator != null)
+            {
+                characterAnimator.SetTrigger("Appear");
+            }
+            else
+            {
+                Debug.LogWarning("Character Animator is not assigned.");
             }
         }
         else
