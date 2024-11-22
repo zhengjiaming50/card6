@@ -12,6 +12,7 @@ public class StartDrawManager : MonoBehaviour
     [SerializeField] private Image selectedCharacterImage;
     [SerializeField] private IntroductionManager introductionManager;
     [SerializeField] private List<Character> characters;
+    [SerializeField] private Button exitButton;
 
     private Character drawnCharacter;
 
@@ -37,6 +38,15 @@ public class StartDrawManager : MonoBehaviour
 
         if (videoPanel != null) videoPanel.SetActive(false);
         if (characterDisplayPanel != null) characterDisplayPanel.SetActive(false);
+
+        if (exitButton != null)
+        {
+            exitButton.onClick.AddListener(ExitGame);
+        }
+        else
+        {
+            Debug.LogError("Exit Button is not assigned in the inspector.");
+        }
     }
 
     private void OnStartDrawClicked()
@@ -122,5 +132,15 @@ public class StartDrawManager : MonoBehaviour
             characterDisplayPanel.SetActive(false);
             selectedCharacterImage.sprite = null;
         }
+    }
+
+    private void ExitGame()
+    {
+        Debug.Log("Exiting the game...");
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 }
