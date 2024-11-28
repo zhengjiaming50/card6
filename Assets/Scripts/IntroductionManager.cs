@@ -30,6 +30,9 @@ public class IntroductionManager : MonoBehaviour
         {
             Debug.LogError("Introduction Panel is not assigned in the inspector.");
         }
+
+        // Adjust the Introduction Image size to 80% of the screen
+        AdjustIntroductionImageSize();
     }
 
     public void ShowIntroduction(Sprite introSprite)
@@ -61,6 +64,29 @@ public class IntroductionManager : MonoBehaviour
         else
         {
             Debug.LogError("Introduction Panel is not assigned.");
+        }
+    }
+
+    // Adjust the introduction image to occupy 80% of the screen
+    private void AdjustIntroductionImageSize()
+    {
+        if (introductionImage != null)
+        {
+            RectTransform panelRect = introductionPanel.GetComponent<RectTransform>();
+            RectTransform imageRect = introductionImage.GetComponent<RectTransform>();
+
+            if (panelRect != null && imageRect != null)
+            {
+                float width = panelRect.rect.width * 0.8f;
+                float height = panelRect.rect.height * 0.8f;
+
+                imageRect.sizeDelta = new Vector2(width, height);
+                imageRect.anchoredPosition = Vector2.zero; // Center the image
+            }
+            else
+            {
+                Debug.LogError("RectTransform components are missing.");
+            }
         }
     }
 
